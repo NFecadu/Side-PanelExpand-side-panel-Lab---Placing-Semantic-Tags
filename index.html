@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IU News - CIT Web Design Lab</title>
+  <style>
+    /* CSS (embedded) */
+    body {
+      height: 100vh;
+      border: 3px solid grey;
+      margin: 0;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    }
+
+    header {
+      width: 100%;
+      height: 100px;
+      background-color: #990000;
+      color: #edebeb;
+      font-size: xx-large;
+      text-align: center;
+      padding-top: 15px;
+    }
+
+    nav {
+      border-top: 10px dashed #990000;
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .contents {
+      position: relative;
+    }
+
+    .articles {
+      width: 60%;
+      background-color: #edebeb;
+      border: 2px solid #990000;
+      margin-top: 15px;
+    }
+
+    article {
+      width: 90%;
+      height: auto;
+      margin: 10px auto;
+      padding: 10px;
+      border: 5px solid grey;
+      border-radius: 15px;
+    }
+
+    aside {
+      position: absolute;
+      top: 120px;
+      left: 65%;
+      width: 30%;
+      background-color: #edebeb;
+      border: 2px solid #990000;
+      padding: 10px;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 2px;
+      width: 100%;
+      text-align: center;
+      background-color: #edebeb;
+      color: #990000;
+      padding: 5px 0;
+    }
+
+    /* Custom Component (Breaking News Banner) */
+    .breaking-news {
+      position: absolute;
+      top: 150px;
+      right: 20px;
+      background-color: #990000;
+      color: #edebeb;
+      padding: 10px;
+      border-radius: 5px;
+      z-index: 100;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <img src="trident-large.png" alt="IU Logo">
+      Indiana University In the News
+    </header>
+    <nav>Home -- About -- Contact</nav>
+
+    <div class="contents">
+      <div class="articles">
+        <article>
+          <h1>Silicon Chip Implant Marvel</h1>
+          <p>A silicon device that can change skin tissue into blood vessels and nerve cells has advanced from prototype to standardized production. Developed by researchers at the Indiana University School of Medicine, this technology, called tissue nanotransfection, is a non-invasive device that can reprogram tissue by applying a harmless electric spark to activate specific genes.</p>
+          <p>The device successfully transformed skin tissue into blood vessels to repair a badly injured leg in lab tests. The technology is now being explored for repairing brain damage caused by stroke and reversing nerve damage from diabetes.</p>
+        </article>
+        <article>
+          <h1>Legal Implications, IU School Of Medicine</h1>
+          <p>The treatment is expected to seek FDA approval within 3 years. Once approved, the device could be used in clinical research in hospitals, health centers, and emergency situations by first responders or the military. Ethical guidelines are being developed alongside the technology to ensure responsible use.</p>
+        </article>
+      </div>
+
+      <aside>
+        <h2>Other Areas of Research</h2>
+        <p>BLOOMINGTON, Ind. – While the American Research Plan Act provides resources for low- and middle-class Americans, an IU professor argues more should be done to ensure tax subsidies benefit broader populations rather than disproportionately favoring high-income groups.</p>
+      </aside>
+
+      <!-- Custom Component -->
+      <div class="breaking-news">
+        BREAKING: IU researchers win $5M NIH grant for nanotech!
+      </div>
+    </div>
+
+    <footer>
+      2023, Copyright – Nathan Fecadu – IU CIT Web Design
+    </footer>
+  </div>
+</body>
+</html>
